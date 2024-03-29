@@ -37,7 +37,7 @@ export const Login = () => {
             setEmail('');
             setPassword('');
             navigate("/author-profile");
-               
+
         } else {
             if (response.status == 404) {
                 const error = await response.text();
@@ -50,9 +50,9 @@ export const Login = () => {
     }
 
     return (
-        
-        <div className="d-flex align-items-center justify-content-center mx-3" style={{ minHeight: '790px' }}>
-            <form style={{ width: "400px" }}>
+        <div className="position-relative mx-8" style={{ minHeight: '790px' }}>
+            <h1 className="text-center display-5 text-white" style={{ marginTop: '50px', zIndex: '1' }}>Inicia sesión</h1>
+            <form className="mt-5" style={{ width: "400px", margin: 'auto' }}>
                 <div className="form-group">
                     <label htmlFor="exampleInputEmail1">Email </label>
                     <input type="email" value={email} onChange={handleEmail}

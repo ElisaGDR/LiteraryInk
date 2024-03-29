@@ -36,7 +36,7 @@ export const ImageUpload = () => {
       <div className="mb-3">
         <input type="file" className="form-control" onChange={handleFileChange} />
       </div>
-      <button className="btn btn-primary me-3" onClick={uploadFile}>
+      <button className="btn btn-warning text-dark fw-bold me-3" onClick={uploadFile}>
         Subir
       </button>
       <button onClick={handleReset} className="btn btn-primary mx-3" type="reset">Cancelar</button>

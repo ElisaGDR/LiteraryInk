@@ -1,33 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 export const Mentories = () => {
     return (
-        <div className="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center " style={{minHeight: "790px"}}>
+        <div className="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center" style={{ minHeight: "790px", backgroundColor: '#333333' }}>
             <div className="my-3 py-3">
-                <h2 className="display-5">Mentorías</h2>
-                <p className="lead">¿Quieres publicar tu libro y no sabes cómo?</p>
+                <h2 className="display-5 text-white">Mentorías</h2>
+                <p className="lead text-white">¿Quieres publicar tu libro y no sabes cómo?</p>
             </div>
             <div className="container mt-4">
                 <div className="row">
                     <div className="col-md-8">
-                        <div className="bg-body-tertiary shadow-sm mb-4"
+                        <div className="bg-body shadow-sm mb-4"
                             style={{
-                                borderRadius: '21px 21px 0 0',
-                                background: '#dcdcdc',
+                                borderRadius: '21px',
+                                backgroundColor: '#333333',
+                                border: '4px solid grey',
                                 position: 'relative',
                                 zIndex: 0,
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
                                 flexDirection: 'column',
+                                color: 'white'
                             }}>
                             <p className="m-5"
                                 style={{
                                     position: 'relative',
                                     zIndex: 1,
-                                    color: 'black',
                                     textAlign: 'justify',
                                     lineHeight: '1.5',
                                     maxWidth: '80%',
@@ -38,30 +38,30 @@ export const Mentories = () => {
                                 otros recursos para concretar tu obra literaria.
                             </p>
                             <div className="row">
-                                <div className="col-md-4 m-2" style={{ border: '2px solid black', borderRadius: '21px 21px 0 0' }}>
-                                    <div className="card mb-4 box-shadow" >
-                                        <h4 className="my-0 font-weight-normal">Taller completo</h4>
+                                <div className="col-md-4 m-2" style={{ backgroundColor: '#333333', border: '2px solid grey', borderRadius: '21px' }}>
+                                    <div className="card mb-4 box-shadow" style={{ backgroundColor: '#333333', borderRadius: '21px', border: '2px solid grey' }}>
+                                        <h4 className="my-0 font-weight-normal text-white">Taller completo</h4>
                                     </div>
-                                    <div className="card-body">
-                                        <h1 className="card-title pricing-card-title" style={{ fontSize: '20px', color: 'black' }}>359€</h1>
+                                    <div className="card-body" style={{ backgroundColor: '#333333' }}>
+                                        <h1 className="card-title pricing-card-title" style={{ fontSize: '20px', color: 'white' }}>359€</h1>
                                         <Link to="/login">
-                                        <button type="button" className="btn btn-warning fw-bold text-dark mr-2 mt-4">Comprar</button>
+                                            <button type="button" className="btn btn-warning fw-bold text-dark mr-2 mt-4">Comprar</button>
                                         </Link>
                                     </div>
                                 </div>
-                                <div className="col-md-5 m-2" style={{ border: '2px solid black', borderRadius: '21px 21px 0 0' }}>
-                                    <div className="card mb-4 box-shadow" >
-                                        <h4 className="my-0 font-weight-normal">LiteraryInk Miembro</h4>
+                                <div className="col-md-5 m-2" style={{ backgroundColor: '#333333', border: '2px solid grey', borderRadius: '21px' }}>
+                                    <div className="card mb-4 box-shadow" style={{ backgroundColor: '#333333', borderRadius: '21px', border: '2px solid grey' }}>
+                                        <h4 className="my-0 font-weight-normal text-white">LiteraryInk Miembro</h4>
                                     </div>
-                                    <div className="card-body">
-                                        <h1 className="card-title pricing-card-title" style={{ fontSize: '20px', color: 'black' }}>23,95€/mes</h1>
-                                        <ul className="list-unstyled mt-3 mb-4" style={{ color: 'black' }}>
-                                            <li>20% Dto en talleres</li>
-                                            <li>3 reviews incluidas</li>
-                                            <li>Acceso a Pen to Write</li>
+                                    <div className="card-body" style={{ backgroundColor: '#333333' }}>
+                                        <h1 className="card-title pricing-card-title" style={{ fontSize: '20px', color: 'white' }}>23,95€/mes</h1>
+                                        <ul className="list-unstyled mt-3 mb-4">
+                                            <li className="text-white">20% Dto en talleres</li>
+                                            <li className="text-white">3 reviews incluidas</li>
+                                            <li className="text-white">Acceso a Pen to Print</li>
                                         </ul>
                                         <Link to="/login">
-                                        <button type="button" className="btn btn-warning fw-bold text-dark mr-2 mb-4">Hazte miembro</button>
+                                            <button type="button" className="btn btn-warning fw-bold text-dark mr-2 mb-4">Hazte miembro</button>
                                         </Link>
                                     </div>
                                 </div>
@@ -69,7 +69,7 @@ export const Mentories = () => {
                         </div>
                     </div>
                     <div className="col-md-4">
-                        <div className="card bg-grey text-white">
+                        <div className="card bg-grey text-white" style={{ borderRadius: '21px', backgroundColor: '#444444' }}>
                             <div className="card-body">
                                 <h2 className="card-title">Te ofrecemos:</h2>
                                 <ul className="list" style={{ textAlign: 'justify', fontSize: '15px' }}>
@@ -81,7 +81,7 @@ export const Mentories = () => {
                         </div>
                     </div>
                 </div>
-            </div >
-        </div >
+            </div>
+        </div>
     );
 };

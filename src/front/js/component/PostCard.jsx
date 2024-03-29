@@ -60,7 +60,6 @@ export const PostCard = (props) => {
   return (
     <div className="card mb-2 mx-1" style={{ height: '218px' }}>
       <div className="row g-0">
-
         <div className="col-6 col-md-3 col-lg-2 col-xl-2 col-xxl-2 ">
           <div className="">
             <Link to="/post-view">
@@ -78,7 +77,7 @@ export const PostCard = (props) => {
               <Link to="/post-view" onClick={handleIdpost}> {props.titulo} </Link>
             </h5>
             <h6 className="card-subtitle text-body-secondary fw-lighter mb-4">
-              <FontAwesomeIcon className="me-2" icon={faHashnode} size="sm" />
+              <FontAwesomeIcon className="me-2" icon={faHashnode} size="sm" style={{color: 'orange'}}/>
               {props.tags} -
               {
                 authorName == 0 ?
@@ -91,8 +90,8 @@ export const PostCard = (props) => {
               }
             </h6>
             <p className="card-text text-truncate">{props.texto}</p>
-            <h6 className="card-subtitle fw-lighter mb-2"> <FontAwesomeIcon icon={faGlasses} size="sm" /> <span className="text-light"> {leidos} </span> veces leído </h6>
-            <h6 className="card-subtitle fw-lighter mb-2"> <FontAwesomeIcon icon={faStar} size="sm" />
+            <h6 className="card-subtitle fw-lighter mb-2"> <FontAwesomeIcon icon={faGlasses} size="sm" style={{color: 'orange'}}/> <span className="text-light"> {leidos} </span> veces leído </h6>
+            <h6 className="card-subtitle fw-lighter mb-2"> <FontAwesomeIcon icon={faStar} size="sm" style={{color: 'orange'}}/>
              {/*
                 <FontAwesomeIcon icon={faStar} size="sm" /><FontAwesomeIcon icon={faStar} size="sm" />
                 <FontAwesomeIcon icon={faStar} size="sm" /><FontAwesomeIcon icon={faStarHalfStroke} size="sm" />

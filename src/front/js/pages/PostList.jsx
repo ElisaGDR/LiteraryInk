@@ -17,7 +17,7 @@ export const PostList = () => {
 
     return (
         <div className="container bg-dark text-light mb-5" style={{minHeight: "790px"}}>
-            <h2 className="mt-4 text-body-primary"> PUBLICACIONES </h2>
+            <h2 className="display-5 text-white"> Publicaciones </h2>
             <div className="pt-5 border-top">
 
                 {store.postsList.length == 0 ?

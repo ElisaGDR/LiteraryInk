@@ -15,7 +15,7 @@ export const AuthorList = () => {
 
     return (
         <div className="container bg-dark text-light mb-5">
-            <h2 className="mt-4 text-body-primary"> AUTORES </h2>
+            <h2 className="display-5 text-white"> Autores </h2>
             <div className="pt-5 border-top" >
 
                 {store.authorsList == 0 ?

@@ -17,7 +17,7 @@ export const SignUpAdvisor = () => {
     const handleAddress = (event) => setAddress(event.target.value);
     const handleCity = (event) => setCity(event.target.value);
     const handleCountry = (event) => setCountry(event.target.value);
-    const handleCategoryChange = (selectedCategory) => setCategory(selectedCategory); 
+    const handleCategoryChange = (selectedCategory) => setCategory(selectedCategory);
 
     const signupAdvisor = async () => {
 
@@ -71,8 +71,9 @@ export const SignUpAdvisor = () => {
     };
 
     return (
-        <div className="d-flex align-items-center justify-content-center" style={{ minHeight: '790px' }}>
-            <form style={{ width: "400px" }}>
+        <div className="position-relative mx-8" style={{ minHeight: '790px' }}>
+            <h1 className="text-center display-5 text-white" style={{ marginTop: '50px', zIndex: '1' }}>Regístrate como empresa</h1>
+            <form className="mt-5" style={{ width: "400px", margin: 'auto' }}>
                 <div className="form-group">
                     <label htmlFor="exampleInputName1">Nombre</label>
                     <input type="text" value={name} onChange={handleName} className="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Escribe el nombre" />

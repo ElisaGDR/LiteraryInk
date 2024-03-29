@@ -92,7 +92,7 @@ export const ProfileCard = (props) => {
                         </div> :
                         <> 
                             <p className="card-text text-body-secondary" > 
-                             <FontAwesomeIcon icon={faPenNib}  /> {localDate}
+                             <FontAwesomeIcon icon={faPenNib}  style={{color: 'orange'}}/> {localDate}
                             </p>
                         </>
                     }
@@ -107,18 +107,16 @@ export const ProfileCard = (props) => {
                                 aria-label="País" aria-describedby="basic-addon1" 
                                 onChange={(e) => { setNewCountry(e.target.value) }} defaultValue={newCountry} />
                         </div> :
-                        <p className="card-text text-body-secondary"><FontAwesomeIcon icon={faLocationDot} /> {newCity} {newCountry} </p>
+                        <p className="card-text text-body-secondary"><FontAwesomeIcon icon={faLocationDot} style={{color: 'orange'}}/> {newCity} {newCountry} </p>
                     }
                 </li>
                 <li className="list-group-item">
-                    <p className="card-text text-body-secondary"><FontAwesomeIcon icon={faBookOpenReader} /> <span className="text-light"> 153 </span> seguidores </p>
+                    <p className="card-text text-body-secondary"><FontAwesomeIcon icon={faBookOpenReader} style={{color: 'orange'}} /> <span className="text-light"> 153 </span> seguidores </p>
                 </li>
                 <li className="list-group-item">
-                    <p className="card-text text-body-secondary"><FontAwesomeIcon icon={faAlignJustify} /> <span className="text-light"> 75 </span> posts </p>
+                    <p className="card-text text-body-secondary"><FontAwesomeIcon icon={faAlignJustify} style={{color: 'orange'}}/> <span className="text-light"> 75 </span> posts </p>
                 </li>
             </ul>
         </div>
-    );
-   
-    
+    );    
 };

@@ -76,7 +76,7 @@ export const PostView = () => {
 
                                     <div className="tags mt-3">
                                     
-                                        <strong>Etiquetas:</strong> {store.selectedPost[0].tag}
+                                        <strong  style={{color: 'orange'}}>Etiquetas:</strong> {store.selectedPost[0].tag}
                                        
                                     </div>
                                    { store.isLogged ? <BotonEditar />: null }
@@ -90,7 +90,7 @@ export const PostView = () => {
                                             </h2>
                                             <div id="collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                                 <div className="accordion-body">
-                                                    <strong>Robert McKey:  </strong> {revText}
+                                                    <strong  style={{color: 'orange'}}>Robert McKey:  </strong> {revText}
                                                 </div>
                                             </div>
                                         </div>

@@ -60,11 +60,11 @@ export const AuthorCard = (props) => {
             </Link>
             <p className="card-text text-truncate pb-1"> {props.aboutMe} </p>
             <div className="">
-              <h6 className="card-text text-body-secondary"><small className="text-body-secondary"> <FontAwesomeIcon icon={faBookOpenReader} />
+              <h6 className="card-text text-body-secondary"><small className="text-body-secondary"> <FontAwesomeIcon icon={faBookOpenReader} style={{color: 'orange'}}/>
                 <span className="text-light"> {seguidores} </span> seguidores </small></h6>
-              <h6 className="card-text text-body-secondary"> <small className="text-body-secondary"><FontAwesomeIcon icon={faAlignJustify} />
+              <h6 className="card-text text-body-secondary"> <small className="text-body-secondary"><FontAwesomeIcon icon={faAlignJustify} style={{color: 'orange'}}/>
                 <span className="text-light"> {escritos} </span> posts </small></h6>
-              <h6 className="card-subtitle fw-lighter"> <small className="text-body-secondary"><FontAwesomeIcon icon={faStar} size="sm" />
+              <h6 className="card-subtitle fw-lighter"> <small className="text-body-secondary"><FontAwesomeIcon icon={faStar} size="sm" style={{color: 'orange'}}/>
                 {/*
                 <FontAwesomeIcon icon={faStar} size="sm" /><FontAwesomeIcon icon={faStar} size="sm" />
                 <FontAwesomeIcon icon={faStar} size="sm" /><FontAwesomeIcon icon={faStarHalfStroke} size="sm" />

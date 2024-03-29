@@ -47,15 +47,15 @@ export const PenApi = () => {
         !store.isLogged ?
             <Cover /> :
 
-            <div className="container mt-5" style={{ minHeight: "790px" }}>
-                <h2 className="mt-4 text-body-primary"> PEN TO PRINT </h2>
+            <div className="container bg-dark text-light mt-5" style={{ minHeight: "790px" }}>
+                <h2 className="display-5 text-white"> Pen to Print </h2>
                 <div className="pt-5 border-top" ></div>
                 
                 <h2><small>Subir Imagen</small></h2>
                 <div className="mb-3">
                     <input type="file" className="form-control" onChange={handleFileChange} />
                 </div>
-                <button className="btn btn-primary" onClick={handleUpload}>
+                <button className="btn btn-warning fw-bold text-dark mr-2" onClick={handleUpload}>
                     Convertir
                 </button>
                 <div className="row">
