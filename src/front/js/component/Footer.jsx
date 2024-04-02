@@ -10,15 +10,18 @@ export const Footer = () => {
   return (
     <div className="container bg-dark text-light mt-auto">
       <footer className="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-3 my-2 border-top">
+         
         <div className="col mb-3">
           <a href="#" className="d-flex align-items-center my-3 link-body-emphasis text-decoration-none">
             <img src={Logo} alt="LiteraryInk logo" style={{ width: '8rem' }} />
           </a>
+          {/*
           <a href="https://4geeksacademy.com/es/inicio" className="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none ">
             <img src={ForGeeks} className="border border-primary rounded-circle bg-secondary ms-3 mt-3"  alt="4Geeks logo" style={{ width: '4rem' }} />
           </a>
-         
+         */}
         </div>
+        
         <div className="col mb-3">
         </div>
          <div className="col">
@@ -33,9 +36,7 @@ export const Footer = () => {
           <ul className="nav flex-column">           
             <li className="nav-item mb-2"><a href="https://github.com/ElisaGDR" target="_blank" className="nav-link p-0 text-light">Elisa García</a></li>
             <li className="nav-item mb-2"><a href="https://github.com/carlosp-11" target="_blank" className="nav-link p-0 text-light">Carlos Ponce</a></li>
-            <li className="nav-item mb-2"><a href="https://github.com/GsX26" target="_blank" className="nav-link p-0 text-light">Gonzalo Suárez</a></li>
-            <li className="nav-item mb-2"><a href="https://github.com/hchocobar" target="_blank" className="nav-link p-0 text-light">Héctor Chocobar</a></li>
-          </ul>
+           </ul>
         </div>
         <div className="col mb-3">
           <h4 style={{ textDecoration: "underline" }}>Legal</h4>
